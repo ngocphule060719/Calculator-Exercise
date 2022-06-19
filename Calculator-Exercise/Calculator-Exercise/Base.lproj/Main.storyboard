@@ -286,7 +286,26 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btn0" destination="iBN-u9-zyk" id="Xiu-MW-KkD"/>
+                        <outlet property="btn0" destination="iBN-u9-zyk" id="GGH-3f-LZd"/>
+                        <outlet property="btn1" destination="o11-vk-Sy3" id="EJ9-he-c6o"/>
+                        <outlet property="btn2" destination="DL6-SP-daK" id="obO-Yl-Tq4"/>
+                        <outlet property="btn3" destination="jcj-ER-K5G" id="MBA-Ub-3nH"/>
+                        <outlet property="btn4" destination="xRw-h0-lOn" id="lx4-fP-kDc"/>
+                        <outlet property="btn5" destination="Vec-7e-Ugu" id="v8t-kd-YXo"/>
+                        <outlet property="btn6" destination="0Sj-Ob-rGo" id="i81-ZL-bWs"/>
+                        <outlet property="btn7" destination="X1J-a4-gqz" id="SMx-v7-4xg"/>
+                        <outlet property="btn8" destination="CZe-5F-Ze2" id="IMw-7B-Plo"/>
+                        <outlet property="btn9" destination="Pty-ar-5sO" id="Qx1-BZ-0ix"/>
+                        <outlet property="btnAC" destination="Q3B-dr-kDn" id="ne4-87-QDg"/>
+                        <outlet property="btnComma" destination="j1r-IL-Ex6" id="ugM-PB-nC2"/>
+                        <outlet property="btnDiv" destination="fVd-8R-HA7" id="siX-cG-jan"/>
+                        <outlet property="btnEqual" destination="SqO-DG-hLt" id="LUB-hS-z5t"/>
+                        <outlet property="btnMinus" destination="HtE-j7-UfJ" id="5sY-3b-bBX"/>
+                        <outlet property="btnMul" destination="Ltb-fb-rTP" id="Jor-Np-jzh"/>
+                        <outlet property="btnPercent" destination="DNh-Pg-bOF" id="p52-wW-a0A"/>
+                        <outlet property="btnPlus" destination="s02-cV-fHT" id="Ly2-Kh-rIV"/>
+                        <outlet property="btnPlusOrMinus" destination="LOa-Nd-CWl" id="VkX-5D-xgF"/>
+                        <outlet property="lblResult" destination="URG-rB-PLb" id="r1d-Ur-Bfj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
