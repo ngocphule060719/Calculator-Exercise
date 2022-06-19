@@ -9,10 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var num1:Int?
-    var num2:Int?
-    var result:Int?
-    var resultDiv:Double?
+    var num1:Double?
+    var num2:Double?
+    var result:Double?
     var functionChoose:Int = 0
     var updateLabelNum2:Bool = false
     
@@ -44,31 +43,40 @@ class ViewController: UIViewController {
     
 
     @IBAction func btnPressed(_ sender: UIButton) {
-        let btnTxt:String = sender.titleLabel!.text!
+        checkButton(button: sender)
+    }
+    
+    
+    func checkButton(button: UIButton){
+        let btnTxt:String = button.titleLabel!.text!
         if Int(btnTxt) != nil && lblResult.text!.count < 25 {
             updateLabel(num: btnTxt)
         } else if btnTxt == "AC" {
             lblResult.text = "0"
+        } else if btnTxt == "," {
+            lblResult.text = lblResult.text! + ","
         } else {
             switch(btnTxt){
             case "+":
-                clickFunctionButton(chooseNum: 1, btn: sender)
+                clickFunctionButton(chooseNum: 1, btn: button)
                 break
             case "-":
-                clickFunctionButton(chooseNum: 2, btn: sender)
+                clickFunctionButton(chooseNum: 2, btn: button)
                 break
             case "x":
-                clickFunctionButton(chooseNum: 3, btn: sender)
+                clickFunctionButton(chooseNum: 3, btn: button)
                 break
             case "÷":
-                clickFunctionButton(chooseNum: 4, btn: sender)
+                clickFunctionButton(chooseNum: 4, btn: button)
                 break
             case "=":
                 configAllButton()
                 updateNum2()
                 calculate()
+                updateResult()
                 break
             case "%":
+                percentButton()
                 break
             case "±":
                 break
@@ -76,12 +84,10 @@ class ViewController: UIViewController {
                 break
             }
         }
-        
     }
     
-    
     func configLayoutButton(button: UIButton){
-        button.layer.cornerRadius = 5
+        button.layer.cornerRadius = 3
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
     }
@@ -133,12 +139,16 @@ class ViewController: UIViewController {
         updateLabelNum2 = true
     }
     
+    func replaceComma(txt: String) -> String{
+        return txt.replacingOccurrences(of: ",", with: ".")
+    }
+    
     func updateNum1(){
-        num1 = Int(lblResult.text!)
+        num1 = Double(replaceComma(txt: lblResult.text!))
     }
     
     func updateNum2(){
-        num2 = Int(lblResult.text!)
+        num2 = Double(replaceComma(txt: lblResult.text!))
     }
     
     func calculate(){
@@ -146,24 +156,32 @@ class ViewController: UIViewController {
             switch(functionChoose){
             case 1:
                 result = num1! + num2!
-                lblResult.text = String(result!)
-                break
             case 2:
                 result = num1! - num2!
-                lblResult.text = String(result!)
                 break
             case 3:
                 result = num1! * num2!
-                lblResult.text = String(result!)
                 break
             case 4:
-                resultDiv = Double(num1!) / Double(num2!)
-                lblResult.text = String(resultDiv!)
+                result = num1! / num2!
                 break
             default:
                 break
             }
         }
+    }
+    
+    func updateResult(){
+        var txt = String(result!)
+        txt = txt.replacingOccurrences(of: ".0", with: "")
+        lblResult.text = txt
+    }
+    
+    func percentButton(){
+        var numOnLabel = Double(lblResult.text!)
+        numOnLabel = numOnLabel!/100
+        let newString = String(numOnLabel!).replacingOccurrences(of: ".", with: ",")
+        lblResult.text = newString
     }
     
 }
