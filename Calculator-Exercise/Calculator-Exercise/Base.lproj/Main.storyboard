@@ -25,6 +25,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ydm-bb-Atd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1r-IL-Ex6" userLabel=",">
                                 <rect key="frame" x="206.99999999999997" y="758.66666666666663" width="103.66666666666666" height="103.33333333333337"/>
@@ -34,6 +37,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title=",">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cvs-sT-f9p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o11-vk-Sy3">
                                 <rect key="frame" x="0.0" y="655" width="103.66666666666667" height="103.66666666666663"/>
@@ -43,6 +49,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="1">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Glg-30-n4H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL6-SP-daK" userLabel="2">
                                 <rect key="frame" x="103.66666666666669" y="655" width="103.33333333333331" height="103.66666666666663"/>
@@ -52,6 +61,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="2">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4f-Yi-s0N"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcj-ER-K5G" userLabel="3">
                                 <rect key="frame" x="206.99999999999997" y="655" width="103.66666666666666" height="103.66666666666663"/>
@@ -61,6 +73,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="3">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U96-9x-k8R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRw-h0-lOn" userLabel="4">
                                 <rect key="frame" x="0.0" y="551.66666666666663" width="103.66666666666667" height="103.33333333333337"/>
@@ -70,6 +85,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="4">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h34-If-so7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vec-7e-Ugu">
                                 <rect key="frame" x="103.66666666666669" y="551.66666666666663" width="103.33333333333331" height="103.33333333333337"/>
@@ -79,6 +97,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="5">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Gl-Vn-REx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sj-Ob-rGo">
                                 <rect key="frame" x="206.99999999999997" y="551.66666666666663" width="103.66666666666666" height="103.33333333333337"/>
@@ -88,6 +109,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="6">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZD-nz-o3d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1J-a4-gqz" userLabel="7">
                                 <rect key="frame" x="0.0" y="448" width="103.66666666666667" height="103.66666666666663"/>
@@ -97,6 +121,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="7">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mnI-MO-xJY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-5F-Ze2" userLabel="8">
                                 <rect key="frame" x="103.66666666666669" y="448" width="103.33333333333331" height="103.66666666666663"/>
@@ -106,6 +133,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="8">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dM4-q1-v2M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-ar-5sO" userLabel="9">
                                 <rect key="frame" x="206.99999999999997" y="448" width="103.66666666666666" height="103.66666666666663"/>
@@ -115,6 +145,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="9">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B4I-8k-Bfm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3B-dr-kDn">
                                 <rect key="frame" x="0.0" y="344.66666666666669" width="103.66666666666667" height="103.33333333333331"/>
@@ -124,6 +157,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="AC">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHR-Qp-WqB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOa-Nd-CWl">
                                 <rect key="frame" x="103.66666666666669" y="344.66666666666669" width="103.33333333333331" height="103.33333333333331"/>
@@ -133,6 +169,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="±">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FL6-Tv-JfD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNh-Pg-bOF">
                                 <rect key="frame" x="206.99999999999997" y="344.66666666666669" width="103.66666666666666" height="103.33333333333331"/>
@@ -142,6 +181,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="%">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pzb-Wi-ve3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqO-DG-hLt" userLabel="=">
                                 <rect key="frame" x="310.66666666666669" y="758.66666666666663" width="103.33333333333331" height="103.33333333333337"/>
@@ -151,6 +193,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="=">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AAr-4L-jYv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s02-cV-fHT">
                                 <rect key="frame" x="310.66666666666669" y="655" width="103.33333333333331" height="103.66666666666663"/>
@@ -160,6 +205,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYR-Tl-Qkj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtE-j7-UfJ">
                                 <rect key="frame" x="310.66666666666669" y="551.66666666666663" width="103.33333333333331" height="103.33333333333337"/>
@@ -169,6 +217,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="-">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jil-sJ-KuY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltb-fb-rTP">
                                 <rect key="frame" x="310.66666666666669" y="448" width="103.33333333333331" height="103.66666666666663"/>
@@ -178,6 +229,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="x">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dh1-nu-kjd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVd-8R-HA7">
                                 <rect key="frame" x="310.66666666666669" y="344.66666666666669" width="103.33333333333331" height="103.33333333333331"/>
@@ -187,11 +241,21 @@
                                 <buttonConfiguration key="configuration" style="plain" title="÷">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1TP-84-iNg"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URG-rB-PLb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="URG-rB-PLb">
                                 <rect key="frame" x="20" y="239.33333333333334" width="374" height="93.333333333333343"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="80" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

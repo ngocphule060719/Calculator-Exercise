@@ -35,6 +35,17 @@ class ViewController: UIViewController {
         configAllButton()
     }
     
+
+    @IBAction func btnPressed(_ sender: UIButton) {
+        let btnTxt:String = sender.titleLabel!.text!
+        
+        if Int(btnTxt) != nil && lblResult.text!.count < 25 {
+            updateLabel(num: btnTxt)
+        }
+        
+        
+    }
+    
     
     func configLayoutButton(button: UIButton){
         button.layer.cornerRadius = 5
@@ -64,6 +75,14 @@ class ViewController: UIViewController {
         configLayoutButton(button: btnPercent)
         configLayoutButton(button: btnEqual)
     }
-
+    
+    func updateLabel(num:String){
+        if (lblResult.text == "0"){
+            lblResult.text = num
+        } else {
+            let newString = lblResult.text! + num
+            lblResult.text = newString
+        }
+    }
 }
 
