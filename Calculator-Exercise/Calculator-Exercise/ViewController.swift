@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn8: UIButton!
     @IBOutlet weak var btn9: UIButton!
     @IBOutlet weak var btnAC: UIButton!
-    @IBOutlet weak var btnPlusOrMinus: UIButton!
+    @IBOutlet weak var btnPositiveAndNegative: UIButton!
     @IBOutlet weak var btnPercent: UIButton!
     @IBOutlet weak var btnEqual: UIButton!
     @IBOutlet weak var btnPlus: UIButton!
@@ -79,6 +79,7 @@ class ViewController: UIViewController {
                 percentButton()
                 break
             case "±":
+                positiveAndNegative()
                 break
             default:
                 break
@@ -110,7 +111,7 @@ class ViewController: UIViewController {
         configLayoutButton(button: btnMul)
         configLayoutButton(button: btnDiv)
         configLayoutButton(button: btnAC)
-        configLayoutButton(button: btnPlusOrMinus)
+        configLayoutButton(button: btnPositiveAndNegative)
         configLayoutButton(button: btnPercent)
         configLayoutButton(button: btnEqual)
     }
@@ -139,16 +140,12 @@ class ViewController: UIViewController {
         updateLabelNum2 = true
     }
     
-    func replaceComma(txt: String) -> String{
-        return txt.replacingOccurrences(of: ",", with: ".")
-    }
-    
     func updateNum1(){
-        num1 = Double(replaceComma(txt: lblResult.text!))
+        num1 = Double(changeCommaToDot(txt: lblResult.text!))
     }
     
     func updateNum2(){
-        num2 = Double(replaceComma(txt: lblResult.text!))
+        num2 = Double(changeCommaToDot(txt: lblResult.text!))
     }
     
     func calculate(){
@@ -172,17 +169,44 @@ class ViewController: UIViewController {
     }
     
     func updateResult(){
-        var txt = String(result!)
-        txt = txt.replacingOccurrences(of: ".0", with: "")
-        lblResult.text = txt
+        checkNumberAndUpdateLabel(num: result!)
     }
     
     func percentButton(){
-        var numOnLabel = Double(lblResult.text!)
-        numOnLabel = numOnLabel!/100
-        let newString = String(numOnLabel!).replacingOccurrences(of: ".", with: ",")
-        lblResult.text = newString
+        var textOnLabel = lblResult.text!
+        textOnLabel = changeCommaToDot(txt: textOnLabel)
+        var numOnLabel = Double(textOnLabel)
+        numOnLabel! /= 100
+        checkNumberAndUpdateLabel(num: numOnLabel!)
     }
     
+    func positiveAndNegative(){
+        var txtOnLabel = lblResult.text!
+        txtOnLabel = changeCommaToDot(txt: txtOnLabel)
+        var numOnLabel = Double(txtOnLabel)
+        numOnLabel! *= -1
+        checkNumberAndUpdateLabel(num: numOnLabel!)
+    }
+    
+    func changeCommaToDot(txt: String) -> String{
+        return txt.replacingOccurrences(of: ",", with: ".")
+    }
+    
+    func changeDotToComma(txt: String) -> String{
+        return txt.replacingOccurrences(of: ".", with: ",")
+    }
+    
+    func replaceDot0(txt: String) -> String{
+        return txt.replacingOccurrences(of: ".0", with: "")
+    }
+    
+    func checkNumberAndUpdateLabel(num: Double) {
+        var newString = String(num)
+        if num >= 1 {
+            newString = replaceDot0(txt: newString)
+        }
+        newString = changeDotToComma(txt: newString)
+        lblResult.text = newString
+    }
 }
 
