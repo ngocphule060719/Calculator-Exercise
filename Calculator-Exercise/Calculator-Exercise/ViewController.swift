@@ -202,7 +202,8 @@ class ViewController: UIViewController {
     
     func checkNumberAndUpdateLabel(num: Double) {
         var newString = String(num)
-        if num >= 1 {
+        print(newString)
+        if num >= 1 || num <= -1 {
             newString = replaceDot0(txt: newString)
         }
         newString = changeDotToComma(txt: newString)
