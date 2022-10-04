@@ -31,7 +31,7 @@ jobs:
         with:
           path: pr
       - name: Checkout base code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           ref: ${{ github.event.pull_request.base.sha }}
           path: base
@@ -47,7 +47,7 @@ jobs:
           echo "::set-output name=diff::$OUTPUT"
       - name: Comment Code Lines
         continue-on-error: true
-        uses: marocchino/sticky-pull-request-comment@v3
+        uses: marocchino/sticky-pull-request-comment@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           header: LOC
