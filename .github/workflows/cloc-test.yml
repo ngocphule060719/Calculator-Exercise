@@ -35,6 +35,11 @@ jobs:
         with:
           fetch-depth: 0
       
+      - name: Checkout base code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
       
       - name: Count Lines Of Code
         id: loc
@@ -55,4 +60,5 @@ jobs:
           header: LOC
           message: |
             ### Lines Of Code
+
             ${{ steps.loc.outputs.diff }}
